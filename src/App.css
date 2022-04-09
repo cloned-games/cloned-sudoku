@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #f6f6f6;
+  min-height: 98vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.row {
+  display: flex;
+}
+
+.row:nth-child(3n+1) {
+  border-top: 2px solid black;
+}
+
+.row:nth-child(n+9) {
+  border-bottom: 2px solid black;
+}
+
+.row:nth-child(n) :nth-child(3n+1) {
+  border-left: 2px solid black;
+}
+
+.row:nth-child(n) :nth-child(n+9) {
+  border-right: 2px solid black;
+}
+
+.cell {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  line-height: 35px;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  border: 0.5px solid black;
+}
